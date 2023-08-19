@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/usuarios', [UsuarioController::class, 'index']);
-Route::get('usuarios?id={id}', [UsuarioController::class, 'getById']);
+Route::get('/usuarios/{id}', [UsuarioController::class, 'getById']);
